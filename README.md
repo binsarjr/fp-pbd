@@ -35,9 +35,11 @@ CREATE USER 'pegawai_hotel'@'localhost' IDENTIFIED BY 'pegawai_hotel';
 GRANT 'role_pegawai' TO 'pegawai_hotel'@'localhost';
 
 
--- NOTE: Dalam beberapa kasus mysql tidak memberikan akses database langusng ke user maka perlu menjalankan ini untuk mentrigger mysql supaya memberikan aksesnya
+-- NOTE: Dalam beberapa kasus mysql tidak memberikan
+-- akses database langusng ke user maka perlu menjalankan ini 
+-- untuk mentrigger mysql supaya memberikan aksesnya
 GRANT SELECT, INSERT, UPDATE ON perhotelan.* TO 'pegawai_hotel'@'localhost';
 ```
 
 
-NOTE: Sesuai nama databasenya
+NOTE: Sesuaikan nama databasenya
